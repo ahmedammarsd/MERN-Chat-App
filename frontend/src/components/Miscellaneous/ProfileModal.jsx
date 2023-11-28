@@ -17,11 +17,11 @@ import React from "react";
 
 const ProfileModal = ({ user, children }) => {
   const { isOpen, onOpen, onClose } = useDisclosure();
-  
+
   return (
     <>
       {children ? (
-        <spna onClick={onOpen}>{children}</spna>
+        <span onClick={onOpen}>{children}</span>
       ) : (
         <IconButton
           display={{ base: "flex" }}
